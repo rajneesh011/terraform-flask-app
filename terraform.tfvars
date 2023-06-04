@@ -1,5 +1,5 @@
-aws_access_key = "AKIAUKDIIOFAJCHY2JFV"
-aws_secret_key = "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"
+aws_access_key = "AKIAXIJOBZXEMOI4T57L"
+aws_secret_key = "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"
 db_password    = "m2n1shlko"
 db_name        = "flask_db"
 db_username    = "flask_user"

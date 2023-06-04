@@ -5,8 +5,8 @@ sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt-get install -y python3.8 python3-pip python3.8-dev python3.8-venv python3.8-distutils net-tools gunicorn libmysqlclient-dev
 mkdir -p /var/www/flask-app
 cd /var/www/flask-app/
-python3 -m venv venv
-source venv/bin/activate
+# python3 -m venv venv
+# source venv/bin/activate
 git clone https://github.com/rajneesh011/Flask-CRUD-App.git
 cd Flask-CRUD-App/  
 pip3 install -r requirements.txt

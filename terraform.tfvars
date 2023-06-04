@@ -1,5 +1,5 @@
-aws_access_key = ${{ secrets.AWS_ACCESS_KEY_ID }}
-aws_secret_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+aws_access_key = "AKIAUKDIIOFAJCHY2JFV"
+aws_secret_key = "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"
 db_password    = "m2n1shlko"
 db_name        = "flask_db"
 db_username    = "flask_user"

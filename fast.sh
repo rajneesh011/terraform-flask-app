@@ -11,8 +11,8 @@ git clone https://github.com/rajneesh011/Flask-CRUD-App.git
 cd Flask-CRUD-App/  
 pip3 install -r requirements.txt
 # export DATABASE_URL=mysql://${var.db_username}:${var.db_password}@$(terraform output -raw rds_endpoint)/${var.db_name}
-export MYSQL_HOST = ${ tarraform output -raw rds_endpoint}
-export MYSQL_USER = ${var.db_username}
-export MYSQL_PASSWORD = ${var.db_password}
-export MYSQL_DB = ${var.db_name}
+export host = ${ tarraform output -raw rds_endpoint}
+export user = ${var.db_username}
+export password = ${var.db_password}
+export database = ${var.db_name}
 gunicorn --bind 0.0.0.0:5000 app:app

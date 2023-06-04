@@ -23,27 +23,27 @@ jobs:
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 1.0.5
-#     - name: init
-#       run: terraform init
-      
-#     - name: terraform destroy
-#       run: terraform destroy --auto-approve
-
-    - name: Terraform Init
+    - name: init
       run: terraform init
+      
+    - name: terraform destroy
+      run: terraform destroy --auto-approve
 
-    - name: Terraform Apply
-      run: terraform apply --auto-approve
+#     - name: Terraform Init
+#       run: terraform init
 
-    - name: Get EC2 Instance Public IP
-      run: |
-        public_ip=$(terraform output -raw instance_public_ip)
-        echo "Public IP Address of EC2 Instance: $public_ip"
+#     - name: Terraform Apply
+#       run: terraform apply --auto-approve
+
+#     - name: Get EC2 Instance Public IP
+#       run: |
+#         public_ip=$(terraform output -raw instance_public_ip)
+#         echo "Public IP Address of EC2 Instance: $public_ip"
         
-    - name: Get RDS Endpoint
-      run: |
-        db_hostname=$(terraform output -raw rds_endpoint)
-        echo "Public IP Address of EC2 Instance: $db_hostname"
+#     - name: Get RDS Endpoint
+#       run: |
+#         db_hostname=$(terraform output -raw rds_endpoint)
+#         echo "Public IP Address of EC2 Instance: $db_hostname"
 
         
     
